@@ -6,7 +6,7 @@ This repository accompanies the following publication:
 
 George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA 30332-0405, USA
 
-![Architecture diagram](figures/architecture.png)
+![Architecture diagram](figures/architecture.jpg)
 
 ## Overview
 
