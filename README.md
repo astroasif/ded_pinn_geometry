@@ -6,6 +6,8 @@ This repository accompanies the following publication:
 
 George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA 30332-0405, USA
 
+![Architecture diagram](figures/architecture.png)
+
 ## Overview
 
 Wire Arc Directed Energy Deposition (Wire Arc DED), also known as Wire Arc Additive Manufacturing (WAAM), is a metal 3D-printing process, and accurately predicting the geometry of each deposited bead is difficult because of the tightly coupled thermal and geometric behavior involved. This work develops a coupled Physics-Informed Neural Network (PINN) framework that predicts bead geometry by combining the governing process physics with experimental data, rather than relying solely on expensive numerical simulations or purely data-driven models.
