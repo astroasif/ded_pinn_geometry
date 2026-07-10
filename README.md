@@ -6,8 +6,6 @@ This repository accompanies the following publication:
 
 George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA 30332-0405, USA
 
-![Architecture diagram](figures/architecture.jpg)
-
 ## Overview
 
 Wire Arc Directed Energy Deposition (Wire Arc DED), also known as Wire Arc Additive Manufacturing (WAAM), is a metal 3D-printing process, and accurately predicting the geometry of each deposited bead is difficult because of the tightly coupled thermal and geometric behavior involved. This work develops a coupled Physics-Informed Neural Network (PINN) framework that predicts bead geometry by combining the governing process physics with experimental data, rather than relying solely on expensive numerical simulations or purely data-driven models.
@@ -17,6 +15,8 @@ The framework uses a sequential two-step workflow:
 2. A **geometry model** uses that temperature field to predict the bead's cross-sectional profile, solving a surface-equilibrium (energy minimization) problem that accounts for arc pressure, surface tension, and gravity.
 
 Both a **high-fidelity** model (finer temporal resolution) and a **low-fidelity** model (coarser temporal resolution) are developed and compared. Incorporating a small number of measured bead geometry data points into training substantially improves accuracy for both models, and the models generalize well to bead locations beyond where the data was collected.
+
+![Architecture diagram](figures/architecture.jpg)
 
 ### Key results
 - The high-fidelity PINN model (0.2 s temporal step) reaches an average bead height prediction error of 8.38% and width error of 1.09%, after about 12.7 hours of training on four H100 GPUs.
